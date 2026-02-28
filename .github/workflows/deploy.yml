@@ -12,10 +12,10 @@ jobs:
         with:
           persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, which has read-only permission for the repository
 
-      - name: Use Node.js 18
+      - name: Use Node.js 20
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: '20'
 
       - name: Install dependencies
         run: npm ci
