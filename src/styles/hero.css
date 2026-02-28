@@ -1,0 +1,26 @@
+/* Add to src/styles/hero.css */
+.hero-logo-center {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.logo-center-hero {
+  height: 150px; /* Adjust based on your actual logo size */
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+/* If the logo is too large, you can add responsive sizing */
+@media (max-width: 768px) {
+  .logo-center-hero {
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-center-hero {
+    height: 100px;
+  }
+}
