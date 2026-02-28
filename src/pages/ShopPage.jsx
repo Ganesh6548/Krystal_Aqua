@@ -14,7 +14,7 @@ const ShopPage = () => {
           {products.map((product) => (
             <div className="shop-card" key={product.id}>
               <div className="shop-card-image">
-                <img src={product.image} alt={product.name} />
+                <img src={`${import.meta.env.BASE_URL}${product.image}`} alt={product.name} />
               </div>
               <div className="shop-card-content">
                 <h3>{product.name}</h3>
