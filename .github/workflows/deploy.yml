@@ -4,13 +4,17 @@ on:
   push:
     branches: [ main ]
 
+permissions:
+  contents: write
+  pages: write
+
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
         with:
-          persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, which has read-only permission for the repository
+          persist-credentials: true # allow the GITHUB_TOKEN to push to the repo
 
       - name: Use Node.js 20
         uses: actions/setup-node@v3
