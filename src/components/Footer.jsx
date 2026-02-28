@@ -15,7 +15,7 @@ const Footer = () => {
           <div className="footer-col">
             <div className="company-info">
               <div className="footer-logo">
-                <img src="\public\logo.png" alt="Krystal Aqua Logo" className="logo-img" />
+                <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Krystal Aqua Logo" className="logo-img" />
                 <h3 className="company-name">Krystal Aqua</h3>
               </div>
               <p className="company-tagline">

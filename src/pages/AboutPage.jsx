@@ -9,7 +9,7 @@ const AboutPage = () => {
       {/* Banner Section - Updated to match BottlesChangePage format */}
       <section className="banner-section">
         <img 
-          src="/About page/About us.png" 
+          src={`${import.meta.env.BASE_URL}About%20page/About%20us.png`} 
           alt="About Krystal Aqua" 
           className="banner-image"
           style={{ filter: 'brightness(1)' }} // Full brightness

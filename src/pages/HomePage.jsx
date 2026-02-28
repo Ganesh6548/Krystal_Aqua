@@ -5,11 +5,11 @@ import { CartContext } from "../context/CartContext";
 import "../styles/home.css";
 
 const products = [
-  { id: 1, name: "300ml Box", pack: "30 pcs", price: 95, image: "/products/500ml.png" },
-  { id: 2, name: "500ml Box", pack: "24 pcs", price: 100, image: "/products/300ml.png" },
-  { id: 3, name: "1L Box", pack: "12 pcs", price: 90, image: "/products/1L.png" },
-  { id: 4, name: "2L Box", pack: "9 pcs", price: 100, image: "/products/2L.png" },
-  { id: 5, name: "5L Bottle", pack: "1 pc", price: 45, image: "/products/5L.png" },
+  { id: 1, name: "300ml Box", pack: "30 pcs", price: 95, image: "products/500ml.png" },
+  { id: 2, name: "500ml Box", pack: "24 pcs", price: 100, image: "products/300ml.png" },
+  { id: 3, name: "1L Box", pack: "12 pcs", price: 90, image: "products/1L.png" },
+  { id: 4, name: "2L Box", pack: "9 pcs", price: 100, image: "products/2L.png" },
+  { id: 5, name: "5L Bottle", pack: "1 pc", price: 45, image: "products/5L.png" },
 ];
 
 const Home = () => {
@@ -23,7 +23,7 @@ const Home = () => {
       <section className="hero">
         <div className="hero-background">
           <img
-            src="/Logo-two (2).png"
+            src={`${import.meta.env.BASE_URL}Logo-two%20(2).png`}
             alt="Krystal Aqua Background"
             className="background-image"
           />
@@ -41,7 +41,7 @@ const Home = () => {
         <div className="product-grid">
           {products.map((item) => (
             <div className="product-card" key={item.id}>
-              <img src={item.image} alt={item.name} />
+              <img src={`${import.meta.env.BASE_URL}${item.image}`} alt={item.name} />
               <h3>{item.name}</h3>
               <p>{item.pack}</p>
               <strong>₹{item.price}</strong>

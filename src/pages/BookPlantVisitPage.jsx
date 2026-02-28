@@ -85,8 +85,7 @@ const BookPlantVisitPage = () => {
       {/* Banner Section - Matching BottlesChangePage format */}
       <section className="banner-section">
         <img 
-          src="\About page\Book a plat visit.png" 
-          alt="Book Plant Visit" 
+          src={`${import.meta.env.BASE_URL}About%20page/Book%20a%20plat%20visit.png`}
           className="banner-image"
           style={{ filter: 'brightness(1)' }} // Full brightness
         />

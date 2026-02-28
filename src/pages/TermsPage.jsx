@@ -8,9 +8,9 @@ const TermsPage = () => {
     <div>
       {/* Banner Section */}
       <section className="banner-section">
-        <img 
-          src="\About page\Privacy.png" 
-          alt="Terms & Conditions" 
+        <img
+          src={`${import.meta.env.BASE_URL}About%20page/Privacy.png`}
+          alt="Terms & Conditions"
           className="banner-image"
         />
         <div className="banner-overlay"></div>

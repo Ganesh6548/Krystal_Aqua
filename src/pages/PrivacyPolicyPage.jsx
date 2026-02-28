@@ -9,7 +9,7 @@ const PrivacyPolicyPage = () => {
       {/* Banner Section */}
       <section className="banner-section">
         <img 
-          src="/About page/Privacy.png" 
+          src={`${import.meta.env.BASE_URL}About%20page/Privacy.png`} 
           alt="Privacy Policy" 
           className="banner-image"
         />
