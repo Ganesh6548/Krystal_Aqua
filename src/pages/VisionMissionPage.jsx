@@ -9,7 +9,7 @@ const VisionMissionPage = () => {
       {/* Banner Section - Updated with image */}
       <section className="banner-section">
         <img 
-          src="/About page/20260227_233710_0000.png" 
+          src={`${import.meta.env.BASE_URL}About%20page/20260227_233710_0000.png`} 
           alt="Vision, Mission & Values" 
           className="banner-image"
         />
@@ -52,7 +52,7 @@ const VisionMissionPage = () => {
           <div className="content-with-image">
             <div className="image-card">
               <img
-                src="\About page\Our vision.png"
+                src={`${import.meta.env.BASE_URL}About%20page/Our%20vision.png`}
                 alt="Our Vision"
                 className="card-image"
                 style={{ maxHeight: "400px", objectFit: "contain" }}
@@ -115,7 +115,7 @@ const VisionMissionPage = () => {
             </div>
             <div className="image-card">
               <img
-                src="\About page\Mission.png"
+                src={`${import.meta.env.BASE_URL}About%20page/Mission.png`}
                 alt="Our Mission"
                 className="card-image"
                 style={{ maxHeight: "400px", objectFit: "contain" }}
@@ -133,7 +133,7 @@ const VisionMissionPage = () => {
           <div className="content-with-image">
             <div className="image-card">
               <img
-                src="\About page\Our value.png"
+                src={`${import.meta.env.BASE_URL}About%20page/Our%20value.png`}
                 alt="Our Values"
                 className="card-image"
                 style={{ maxHeight: "400px", objectFit: "contain" }}

@@ -16,10 +16,9 @@ const Hero = () => {
         {/* Logo Center instead of text (696×315 size) */}
         <div className="hero-logo-center">
           <img 
-            src="/logo-center.png" 
+            src={`${import.meta.env.BASE_URL}logo-center.png`} 
             alt="Krystal Aqua" 
             className="logo-center-hero"
-           
           />
         </div>
         

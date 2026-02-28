@@ -16,14 +16,14 @@ const ImageTest = () => {
       <h4>Image Test</h4>
       <div>
         <img 
-          src="/Logo two.jpeg" 
+          src={`${import.meta.env.BASE_URL}Logo-two (2).png`} 
           alt="Test" 
           style={{width: '100px'}}
           onLoad={() => setImageStatus('✅ Image loaded')}
           onError={() => setImageStatus('❌ Image NOT found')}
         />
         <p>Status: {imageStatus}</p>
-        <p>Path: /Logo two.jpeg</p>
+        <p>Path: {import.meta.env.BASE_URL + 'Logo-two (2).png'}</p>
       </div>
     </div>
   );

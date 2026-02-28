@@ -31,7 +31,7 @@ const Header = () => {
       <div className="logo-left">
         <Link to="/" className="logo-link">
           <img 
-            src="/logo.png" 
+            src={`${import.meta.env.BASE_URL}logo.png`} 
             alt="Krystal Aqua Logo" 
             className="logo-image logo-image-left"
             onError={(e) => {
@@ -45,7 +45,7 @@ const Header = () => {
       {/* Logo 2 - Next to Logo 1 */}
       <div className="logo-two">
         <img 
-          src="/logo-two.png" 
+          src={`${import.meta.env.BASE_URL}logo-two.png`} 
           alt="Krystal Aqua Logo Two" 
           className="logo-image-two"
           onError={(e) => {
